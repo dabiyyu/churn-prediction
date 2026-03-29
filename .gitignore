@@ -1,0 +1,37 @@
+# Data files
+data/
+*.csv
+*.xlsx
+*.json
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.pkl
+*.joblib
+
+# Virtual environment
+venv/
+env/
+.env
+*.env
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# MLflow
+mlruns/
+
+# Streamlit
+.streamlit/secrets.toml
