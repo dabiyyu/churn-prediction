@@ -48,3 +48,21 @@
 - Total CLTV lost to churn: $7,755,256
 - → Nearly $7.8M in lifetime value walked out the door
 - → Even reducing churn by 5% would recover ~$387,000 in CLTV
+
+## Model — Top 5 Predictive Features (SHAP)
+1. Tenure Months — longer tenure strongly predicts retention
+   → Confirms first year is the critical churn window
+2. Dependents — customers with dependents churn less
+   → Family accounts are stickier, worth targeting with family plans
+3. Contract: Two Year — strongest contract protection against churn
+   → Directly confirms the contract upgrade recommendation
+4. Internet Service: Fiber Optic — fiber users at significantly higher churn risk
+   → Confirms product gap vs competitors (speed/data offerings)
+5. Contract: One Year — moderate protection vs month-to-month
+   → Even moving customers from monthly to annual reduces risk significantly
+
+## Model Performance
+- Best model: Gradient Boosting
+- ROC-AUC: 0.8501
+- Churners correctly identified: 198/374 (53% recall)
+- Future improvement: hyperparameter tuning to improve recall
